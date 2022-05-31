@@ -24,30 +24,32 @@ limitations under the License.
 
 > Test if an object's own or inherited property is readable.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/assert-is-readable-property-in
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var isReadablePropertyIn = require( '@stdlib/assert-is-readable-property-in' );
+isReadablePropertyIn = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-readable-property-in@umd/browser.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-readable-property-in@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.isReadablePropertyIn;
+})();
+</script>
 ```
 
 #### isReadablePropertyIn( value, property )
@@ -126,8 +128,13 @@ bool = isReadablePropertyIn( obj, 'setter' );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var isReadablePropertyIn = require( '@stdlib/assert-is-readable-property-in' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-readable-property-in@umd/index.js"></script>
+<script type="text/javascript">
+(function () {
 
 var bool = isReadablePropertyIn( [ 'a' ], 'length' );
 // returns true
@@ -155,6 +162,11 @@ bool = isReadablePropertyIn( null, 'a' );
 
 bool = isReadablePropertyIn( void 0, 'a' );
 // returns false
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -249,13 +261,13 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-read-only-property-in]: https://github.com/stdlib-js/assert-is-read-only-property-in
+[@stdlib/assert/is-read-only-property-in]: https://github.com/stdlib-js/assert-is-read-only-property-in/tree/umd
 
-[@stdlib/assert/is-read-write-property-in]: https://github.com/stdlib-js/assert-is-read-write-property-in
+[@stdlib/assert/is-read-write-property-in]: https://github.com/stdlib-js/assert-is-read-write-property-in/tree/umd
 
-[@stdlib/assert/is-readable-property]: https://github.com/stdlib-js/assert-is-readable-property
+[@stdlib/assert/is-readable-property]: https://github.com/stdlib-js/assert-is-readable-property/tree/umd
 
-[@stdlib/assert/is-writable-property-in]: https://github.com/stdlib-js/assert-is-writable-property-in
+[@stdlib/assert/is-writable-property-in]: https://github.com/stdlib-js/assert-is-writable-property-in/tree/umd
 
 <!-- </related-links> -->
 
