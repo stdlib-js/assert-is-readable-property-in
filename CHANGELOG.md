@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-04-23)
+## Unreleased (2026-05-10)
 
 <section class="issues">
 
@@ -24,6 +24,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`a6af2c8`](https://github.com/stdlib-js/stdlib/commit/a6af2c8b1c99e1c5b9ed43411af53ce4d6d42464) - **bench:** replace `new Array(100)` with `zeros(100, 'generic')` in `assert/is-*-property` benchmarks [(#12010)](https://github.com/stdlib-js/stdlib/pull/12010) _(by Philipp Burckhardt)_
 -   [`4f3532f`](https://github.com/stdlib-js/stdlib/commit/4f3532f4de60955fff978cfe4cba5a6b13772584) - **chore:** fix JavaScript lint errors [(#11457)](https://github.com/stdlib-js/stdlib/pull/11457) _(by Bhumika Sudarshani, Athan Reines)_
 
 </details>
@@ -36,10 +37,11 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Bhumika Sudarshani
+-   Philipp Burckhardt
 
 </section>
 
